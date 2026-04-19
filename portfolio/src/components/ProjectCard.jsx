@@ -9,17 +9,6 @@ export default function ProjectCard({ project }) {
     >
       <h3>{project.title}</h3>
       <p>{project.description}</p>
-
-      <div className="tech">
-        {project.tech.map((t, i) => (
-          <span key={i}>{t}</span>
-        ))}
-      </div>
-
-      <div className="links">
-        <a href={project.demo} target="_blank">🚀 Demo</a>
-        <a href={project.github} target="_blank">💻 GitHub</a>
-      </div>
     </motion.div>
   );
 }
