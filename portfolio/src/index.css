@@ -89,3 +89,27 @@ section {
 .btn:hover {
   background: #333;
 }
+
+
+.dark {
+  background: #0f0f0f;
+  color: white;
+}
+
+.dark .card {
+  background: #1a1a1a;
+  border-color: #333;
+}
+
+.dark .navbar {
+  background: #000;
+}
+
+button {
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  opacity: 0.8;
+}

@@ -1,6 +1,12 @@
+import { motion } from "framer-motion";
+
 export default function ProjectCard({ project }) {
   return (
-    <div className="card">
+    <motion.div
+      className="card"
+      whileHover={{ scale: 1.05 }}
+      transition={{ duration: 0.2 }}
+    >
       <h3>{project.title}</h3>
       <p>{project.description}</p>
 
@@ -11,9 +17,9 @@ export default function ProjectCard({ project }) {
       </div>
 
       <div className="links">
-        <a href={project.demo}>🚀 Demo</a>
-        <a href={project.github}>💻 GitHub</a>
+        <a href={project.demo} target="_blank">🚀 Demo</a>
+        <a href={project.github} target="_blank">💻 GitHub</a>
       </div>
-    </div>
+    </motion.div>
   );
 }
