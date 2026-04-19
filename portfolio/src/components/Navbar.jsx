@@ -7,7 +7,7 @@ export default function Navbar() {
         <a href="#projects">Proyectos</a>
         <a href="#about">Sobre mí</a>
 
-        <a href="/CVangelmanzano" target="_blank">
+        <a href="../../public/CVangelmanzano .pdf" target="_blank">
           📄 CV
         </a>
       </div>
